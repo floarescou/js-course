@@ -1,28 +1,72 @@
-// // LESSON 5
-let box = document.getElementById("box");
-let btn = document.getElementsByTagName("button");
-let circle = document.getElementsByClassName("circle");
-let heart = document.querySelectorAll('.heart');
-let oneHeart = document.querySelector('.heart');
+// // LESSON 6
+let btn = document.getElementsByTagName('button');
+let block = document.querySelector(".block");
+let link = document.getElementsByTagName("a");
 
-box.style.backgroundColor = "chocolate";
-btn[1].style.borderRadius = "50%";
-circle[0].style.backgroundColor = "darkred";
-circle[1].style.backgroundColor = "moccasin";
-circle[2].style.backgroundColor = "darkkhaki";
+link[0].addEventListener('click', function (event) {
+    event.preventDefault();
+    console.log("Произошло событие '" + event.type + "' на элементе " + event.target)
+});
 
-let div = document.createElement('div');
-let text = document.createTextNode('Some text');
+btn[0].addEventListener('click', function (event) {
+    console.log("Произошло событие '" + event.type + "' на элементе " + event.target)
+});
+block.addEventListener('click', function (event) {
+    console.log("Произошло событие '" + event.type + "' на элементе " + event.target)
+});
 
-div.classList.add('black');
+btn[1].addEventListener('mouseenter', function (event) {
+    console.log("Произошло событие '" + event.type + "' на элементе " + event.target)
+});
 
-// document.body.appendChild(div);
-document.body.insertBefore(div, circle[0]);
-document.body.removeChild(circle[1]);
-document.body.replaceChild(heart[0], circle[0]);
+// btn[0].addEventListener('click', function () {
+//     alert("Вы нажали на первую кнопку");
+// });
+// btn[0].addEventListener('click', function () {
+//     alert("Вы опять нажали на первую кнопку");
+// });
+//
+// btn[1].addEventListener('mouseenter', function () {
+//     console.log("Вы навели на вторую кнопку");
+// });
+// btn[2].addEventListener('mouseleave', function () {
+//     console.log("Вы убрали курсор со второй кнопки");
+// });
 
-div.textContent = "Hello, JS";
 
+// btn[0].onclick = function () {
+//   alert("Вы нажали на первую кнопку");
+// };
+// btn[0].onclick = function () {
+//     alert("Вы опять нажали на первую кнопку");
+// };
+
+
+
+// // // LESSON 5
+// let box = document.getElementById("box");
+// let btn = document.getElementsByTagName("button");
+// let circle = document.getElementsByClassName("circle");
+// let heart = document.querySelectorAll('.heart');
+// let oneHeart = document.querySelector('.heart');
+//
+// box.style.backgroundColor = "chocolate";
+// btn[1].style.borderRadius = "50%";
+// circle[0].style.backgroundColor = "darkred";
+// circle[1].style.backgroundColor = "moccasin";
+// circle[2].style.backgroundColor = "darkkhaki";
+//
+// let div = document.createElement('div');
+// let text = document.createTextNode('Some text');
+//
+// div.classList.add('black');
+//
+// // document.body.appendChild(div);
+// document.body.insertBefore(div, circle[0]);
+// document.body.removeChild(circle[1]);
+// document.body.replaceChild(heart[0], circle[0]);
+//
+// div.textContent = "Hello, JS";
 
 
 // // // LESSON 4

@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js-practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JS Курс - shop project/shop-admin-project" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,6 +61,7 @@
       <workItem from="1757372026390" duration="145000" />
       <workItem from="1757373018114" duration="1575000" />
       <workItem from="1757408260810" duration="40000" />
+      <workItem from="1757428505188" duration="1579000" />
     </task>
     <servers />
   </component>
